@@ -1,0 +1,10 @@
+FROM scratch
+
+LABEL maintainer="Do you take blue pill or red pill"
+
+ADD alpine-minirootfs-3.15.0-x86_64.tar.gz /
+
+RUN apt add cmatrix
+
+CMD [ "/usr/bin/cmatrix" ] 
+
